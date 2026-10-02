@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Stitchy Days | Crochet Patterns & Tutorials</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+     ========================================= -->
+
+<header class="site-header">
+
+
+    <!-- SOCIAL BAR -->
+
+    <div class="top-bar">
+
+        <div class="social-links">
+
+            <!-- Instagram -->
+
+            <a href="https://www.instagram.com/stitchy_days/" aria-label="Instagram">
+
+                <svg viewBox="0 0 24 24">
+
+                    <rect
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        rx="5">
+                    </rect>
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="4">
+                    </circle>
+
+                    <circle
+                        cx="17.5"
+                        cy="6.5"
+                        r="1">
+                    </circle>
+
+                </svg>
+
+            </a>
+
+
+            <!-- YouTube -->
+
+            <a href="https://youtube.com/@stitchydays?si=2HmQb50o5YXPT8eg" aria-label="YouTube">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path d="
+                        M21 7.2a2.8 2.8 0 0 0-2-2
+                        C17.2 4.7 12 4.7 12 4.7
+                        s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2
+                        C2.5 9 2.5 12 2.5 12
+                        s0 3 .5 4.8a2.8 2.8 0 0 0 2 2
+                        c1.8.5 7 .5 7 .5
+                        s5.2 0 7-.5a2.8 2.8 0 0 0 2-2
+                        c.5-1.8.5-4.8.5-4.8
+                        s0-3-.5-4.8Z">
+                    </path>
+
+                    <path d="
+                        m10 15 5-3-5-3v6Z">
+                    </path>
+
+                </svg>
+
+            </a>
+
+
+            <!-- Pinterest -->
+
+            <a href="https://in.pinterest.com/stitchydays/" aria-label="Pinterest">
+
+                <svg viewBox="0 0 24 24">
+
+                    <path d="
+                        M12 3a9 9 0 0 0-3.3 17.4
+                        c-.1-1.5 0-3.3.4-4.7l1-4.1
+                        s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8
+                        1 0 1.5.7 1.5 1.6
+                        0 1-.6 2.4-.9 3.7
+                        -.3 1.1.5 2 1.6 2
+                        1.9 0 3.4-2 3.4-4.8
+                        0-2.5-1.8-4.3-4.5-4.3
+                        -3.1 0-4.9 2.3-4.9 4.7
+                        0 .9.3 1.8.8 2.4
+                        .1.1.1.2.1.4l-.3 1.2
+                        c-.1.4-.4.5-.7.3
+                        -1.4-.6-2.2-2.4-2.2-3.9
+                        0-3.2 2.3-6.9 7.1-6.9
+                        3.8 0 6.3 2.7 6.3 5.7
+                        0 3.8-2.1 6.8-5.1 6.8
+                        -1 0-2-.5-2.3-1.1l-.6 2.4
+                        c-.2.9-.8 2.1-1.2 2.8
+                        .9.3 1.8.5 2.8.5
+                        A9 9 0 0 0 12 3Z">
+                    </path>
+
+                </svg>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN HEADER -->
+
+    <div class="header-inner">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="index.html"
+            class="logo">
+
+            <img
+                src="images/logo2.png"
+                alt="Stitchy Days">
+
+        </a>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+            <a aria-current="page" href="index.html">
+                Home
+            </a>
+
+            <a href="written-patterns.html">
+                Written Patterns
+            </a>
+
+            <a href="supplies.html">
+                Supplies
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- HAMBURGER -->
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     SIDE MENU
+     ========================================= -->
+
+
+
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<aside class="side-menu" id="sideMenu">
+    <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
+    <p class="menu-label">POPULAR</p>
+    <h2>My favourite patterns!</h2>
+    <div class="popular-patterns">
+        <a href="tutorials/crochet-lily.html" class="popular-pattern">
+            <div class="popular-pattern-image"><img src="images/lily1.jpeg" alt="Crochet Lily"></div>
+            <div class="popular-pattern-info"><span>FLOWERS</span><h3>Crochet Lily</h3></div>
+        </a>
+        <a href="tutorials/crochet-planter.html" class="popular-pattern">
+            <div class="popular-pattern-image"><img src="images/planter.jpg" alt="Crochet Hanging Planter"></div>
+            <div class="popular-pattern-info"><span>HOME DECOR</span><h3>Hanging Planter</h3></div>
+        </a>
+        <a href="tutorials/crochet-bandana.html" class="popular-pattern">
+            <div class="popular-pattern-image"><img src="images/bandana.jpg" alt="Crochet Bandana"></div>
+            <div class="popular-pattern-info"><span>ACCESSORIES</span><h3>Crochet Bandana</h3></div>
+        </a>
+    </div>
+</aside>
+
+
+
+<!-- =========================================
+     MAIN
+     ========================================= -->
+
+<main>
+
+
+<!-- =========================================
+     HERO
+     ========================================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+
+        <h1>
+            Crochet patterns for your
+            <span>next creation.</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover free written patterns, step-by-step tutorials,
+            and creative ideas to inspire your next crochet project.
+        </p>
+
+        <a href="written-patterns.html" class="primary-button">
+            Explore Written Patterns
+        </a>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="project-image">
+            <img
+                src="images/main.png"
+                alt="Crochet projects by Stitchy Days">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- =========================================
+         LATEST WRITTEN PATTERNS
+         ========================================= -->
+
+    <section class="section latest-patterns-section">
+
+
+        <div class="section-heading">
+
+            <h2>
+                Latest Patterns
+            </h2>
+
+
+            <p>
+                Explore my latest crochet projects
+                and make them yourself.
+            </p>
+
+        </div>
+
+
+
+        <div class="project-grid">
+
+
+            <!-- LILY -->
+
+            <article class="project-card">
+
+                <div class="project-image image-placeholder">
+                    <img src = "images/lily1.jpeg">
+                </div>
+
+
+                <div class="project-info">
+
+                    <p class="project-category">
+                        FLOWERS
+                    </p>
+
+
+                    <h3>
+                        Crochet Lily
+                    </h3>
+
+
+                    <p>
+                        A delicate crochet lily you can
+                        make with a few simple stitches.
+                    </p>
+
+
+                    <a href="tutorials/crochet-lily.html">
+                        View Pattern →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PLANTER -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+    <img src="images/planter.jpg" alt="Crochet Hanging Planter">
+</div>
+
+
+                <div class="project-info">
+
+                    <p class="project-category">
+                        HOME DECOR
+                    </p>
+
+
+                    <h3>
+                        Hanging Planter
+                    </h3>
+
+
+                    <p>
+                        A cute crochet planter perfect
+                        for adding handmade charm.
+                    </p>
+
+
+                    <a href="tutorials/crochet-planter.html">
+                        View Pattern →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- BANDANA -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+    <img src="images/bandana.jpg" alt="Crochet Bandana">
+</div>
+
+
+                <div class="project-info">
+
+                    <p class="project-category">
+                        ACCESSORIES
+                    </p>
+
+
+                    <h3>
+                        Crochet Bandana
+                    </h3>
+
+
+                    <p>
+                        A simple and pretty crochet
+                        accessory for everyday wear.
+                    </p>
+
+
+                    <a href="tutorials/crochet-bandana.html">
+                        View Pattern →
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- ZIGZAG HAIRBAND -->
+
+            <article class="project-card">
+
+                <div class="project-image">
+                    <img src="images/hairband-1.jpg" alt="Crochet zigzag striped hairband">
+                </div>
+
+                <div class="project-info">
+                    <p class="project-category">ACCESSORIES</p>
+                    <h3>Zigzag Striped Hairband</h3>
+                    <p>A cozy, beginner-friendly hairband with soft zigzag stripes.</p>
+                    <a href="tutorials/crochet-striped-hairband.html">View Pattern →</a>
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <div class="center-button">
+
+            <a
+                href="written-patterns.html"
+                class="text-button">
+
+                View All Written Patterns →
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         CATEGORIES
+         ========================================= -->
+
+    <section class="categories-section">
+
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                EXPLORE
+            </p>
+
+
+            <h2>
+                Find your next project.
+            </h2>
+
+        </div>
+
+
+
+        <div class="category-grid">
+
+
+            <a href="written-patterns.html?category=flowers-plants" class="category-card">
+                <h3>Flowers &amp; Plants</h3>
+                <p>Crochet flowers, plants &amp; floral projects</p>
+            </a>
+
+
+
+            <a href="written-patterns.html?category=accessories" class="category-card">
+                <h3>Accessories</h3>
+                <p>Cute things to wear &amp; carry</p>
+            </a>
+
+
+
+            <a href="written-patterns.html?category=bags-purses" class="category-card">
+                <h3>Bags &amp; Purses</h3>
+                <p>Handmade bags &amp; little pouches</p>
+            </a>
+
+
+
+            <a href="written-patterns.html?category=plushies" class="category-card">
+                <h3>Plushies</h3>
+                <p>Soft, cute crochet friends</p>
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         YOUTUBE
+         ========================================= -->
+
+    <section class="youtube-section home-youtube">
+
+
+        <div class="youtube-image">
+            <img src="images/yt.jpg" alt="Stitchy Days YouTube video thumbnail">
+        </div>
+
+
+        <div class="youtube-content">
+
+            <h2>
+                Let's make it together.
+            </h2>
+
+
+            <p>
+
+                Follow along with Stitchy Days crochet
+                tutorials and turn a ball of yarn into
+                something beautiful.
+
+            </p>
+
+
+            <a
+                href="#"
+                class="primary-button">
+
+                Watch on YouTube
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         ABOUT
+         ========================================= -->
+
+    <section
+        class="about-section home-about"
+        id="about">
+
+
+        <div class="about-image">
+            <img src="images/about.jpg" alt="Meghna's crochet workspace">
+        </div>
+
+
+        <div class="about-content">
+
+            <h2>About</h2>
+
+
+            <p>
+                Hi I’m Meghna, the creator behind Stitchy Days, where I share crochet tutorials, written patterns, and little projects that are fun to make and easy to follow.
+            </p>
+
+            <p>
+                From flowers and accessories to home décor and everyday little things, I love turning a simple ball of yarn into something you’ll actually want to make and keep.
+            </p>
+
+            <a href="written-patterns.html" class="primary-button">Explore Patterns <span aria-hidden="true">→</span></a>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =========================================
+         SUPPLIES PREVIEW
+         ========================================= -->
+
+    <section
+        class="supplies-section">
+
+
+        <div class="supplies-content">
+
+            <p class="eyebrow">
+                CROCHET SUPPLIES
+            </p>
+
+
+            <h2>
+
+                Everything you need
+                to crochet.
+
+            </h2>
+
+
+            <p>
+
+                Find the yarn, hooks and little crochet
+                essentials I use for my projects through
+                my Amazon storefront.
+
+            </p>
+
+
+            <a
+                href="supplies.html"
+                class="primary-button">
+
+                Explore Supplies
+
+            </a>
+
+        </div>
+
+
+        <div class="supplies-image">
+            <img src="images/supplies.jpg" alt="Crochet supplies and yarn">
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =========================================
+     FOOTER
+     ========================================= -->
+
+<footer>
+
+
+    <div class="footer-inner">
+
+
+        <!-- PRIVACY POLICY -->
+
+        <div class="footer-column">
+
+            <h4><a href="privacy-policy.html">Privacy Policy</a></h4>
+
+
+            <p>Read our Privacy Policy for information about this website and external services.</p>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-column">
+
+            <h4>
+                Explore
+            </h4>
+
+
+            <a href="written-patterns.html">
+                Written Patterns
+            </a>
+
+
+            <a href="supplies.html">
+                Supplies
+            </a>
+
+
+            <a href="about.html">
+                About
+            </a>
+
+        </div>
+
+
+
+        <!-- CONNECT -->
+
+        <div class="footer-column">
+
+            <h4>
+                Connect
+            </h4>
+
+
+            <a href="https://www.instagram.com/stitchy_days/">
+                Instagram
+            </a>
+
+
+            <a href="https://youtube.com/@stitchydays?si=2HmQb50o5YXPT8eg">
+                YouTube
+            </a>
+
+
+            <a href="https://in.pinterest.com/stitchydays/">
+                Pinterest
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        © 2026 Stitchy Days. All rights reserved.
+
+        <br>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =========================================
+     MENU JAVASCRIPT
+     ========================================= -->
+
+<script>
+const menuButton = document.getElementById("menuButton");
+const closeMenu = document.getElementById("closeMenu");
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+function openMenu() {
+    sideMenu.classList.add("open");
+    menuOverlay.classList.add("show");
+    document.body.classList.add("menu-open");
+    menuButton.setAttribute("aria-expanded", "true");
+}
+
+function closeSideMenu() {
+    sideMenu.classList.remove("open");
+    menuOverlay.classList.remove("show");
+    document.body.classList.remove("menu-open");
+    menuButton.setAttribute("aria-expanded", "false");
+}
+
+menuButton.addEventListener("click", openMenu);
+closeMenu.addEventListener("click", closeSideMenu);
+menuOverlay.addEventListener("click", closeSideMenu);
+document.querySelectorAll(".side-menu a").forEach(link => link.addEventListener("click", closeSideMenu));
+</script>
+
+
+</body>
+
+</html>

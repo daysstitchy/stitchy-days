@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse original Stitchy Days crochet patterns with step-by-step instructions.">
+    <title>Written Patterns | Stitchy Days</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="top-bar"><div class="social-links">
+        <a href="https://www.instagram.com/stitchy_days/" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg></a>
+        <a href="https://youtube.com/@stitchydays?si=2HmQb50o5YXPT8eg" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2C2.5 9 2.5 12 2.5 12s0 3 .5 4.8a2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2c.5-1.8.5-4.8.5-4.8s0-3-.5-4.8Z"></path><path d="m10 15 5-3-5-3v6Z"></path></svg></a>
+        <a href="https://in.pinterest.com/stitchydays/" aria-label="Pinterest"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-3.3 17.4c-.1-1.5 0-3.3.4-4.7l1-4.1s-.3-.7-.3-1.7c0-1.6.9-2.8 2.1-2.8 1 0 1.5.7 1.5 1.6 0 1-.6 2.4-.9 3.7-.3 1.1.5 2 1.6 2 1.9 0 3.4-2 3.4-4.8 0-2.5-1.8-4.3-4.5-4.3-3.1 0-4.9 2.3-4.9 4.7 0 .9.3 1.8.8 2.4.1.1.1.2.1.4l-.3 1.2c-.1.4-.4.5-.7.3-1.4-.6-2.2-2.4-2.2-3.9 0-3.2 2.3-6.9 7.1-6.9 3.8 0 6.3 2.7 6.3 5.7 0 3.8-2.1 6.8-5.1 6.8-1 0-2-.5-2.3-1.1l-.6 2.4c-.2.9-.8 2.1-1.2 2.8.9.3 1.8.5 2.8.5A9 9 0 0 0 12 3Z"></path></svg></a>
+    </div></div>
+    <div class="header-inner">
+        <a href="index.html" class="logo"><img src="images/logo2.png" alt="Stitchy Days"></a>
+        <nav class="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a aria-current="page" href="written-patterns.html">Written Patterns</a><a href="supplies.html">Supplies</a><a href="about.html">About</a></nav>
+        <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+<aside class="side-menu" id="sideMenu">
+    <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
+    <p class="menu-label">POPULAR</p>
+    <h2>My favourite patterns!</h2>
+    <div class="popular-patterns">
+        <a href="tutorials/crochet-lily.html" class="popular-pattern">
+            <div class="popular-pattern-image"><img src="images/lily1.jpeg" alt="Crochet Lily"></div>
+            <div class="popular-pattern-info"><span>FLOWERS</span><h3>Crochet Lily</h3></div>
+        </a>
+        <a href="tutorials/crochet-planter.html" class="popular-pattern">
+            <div class="popular-pattern-image"><img src="images/planter.jpg" alt="Crochet Hanging Planter"></div>
+            <div class="popular-pattern-info"><span>HOME DECOR</span><h3>Hanging Planter</h3></div>
+        </a>
+        <a href="tutorials/crochet-bandana.html" class="popular-pattern">
+            <div class="popular-pattern-image"><img src="images/bandana.jpg" alt="Crochet Bandana"></div>
+            <div class="popular-pattern-info"><span>ACCESSORIES</span><h3>Crochet Bandana</h3></div>
+        </a>
+    </div>
+</aside>
+
+<main class="written-patterns-page">
+    <header class="patterns-intro"><p class="eyebrow">WRITTEN PATTERNS</p><h1>Crochet patterns to make and love.</h1><p>A collection of my original crochet patterns, written step-by-step so you can make them at your own pace.</p>
+        <nav class="patterns-filter" aria-label="Filter patterns by category">
+            <a href="written-patterns.html" data-filter="all">All Patterns</a>
+            <a href="written-patterns.html?category=flowers-plants" data-filter="flowers-plants">Flowers &amp; Plants</a>
+            <a href="written-patterns.html?category=accessories" data-filter="accessories">Accessories</a>
+            <a href="written-patterns.html?category=bags-purses" data-filter="bags-purses">Bags &amp; Purses</a>
+            <a href="written-patterns.html?category=plushies" data-filter="plushies">Plushies</a>
+        </nav>
+    </header>
+    <section class="patterns-grid" aria-label="Crochet patterns">
+        <article class="project-card" data-category="flowers-plants"><a class="project-image" href="tutorials/crochet-lily.html"><img src="images/lily1.jpeg" alt="Crochet Lily"></a><div class="project-info"><p class="project-category">FLOWERS</p><h2>Crochet Lily</h2><p>A delicate handmade lily to bring a little bloom indoors.</p><a href="tutorials/crochet-lily.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="flowers-plants"><a class="project-image" href="tutorials/crochet-planter.html"><img src="images/planter1.jpg" alt="Crochet Hanging Planter"></a><div class="project-info"><p class="project-category">HOME DECOR</p><h2>Hanging Planter</h2><p>A cheerful crochet home for your favorite little plant.</p><a href="tutorials/crochet-planter.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="accessories"><a class="project-image" href="tutorials/crochet-bandana.html"><img src="images/bandana.jpg" alt="Crochet Bandana"></a><div class="project-info"><p class="project-category">ACCESSORIES</p><h2>Crochet Bandana</h2><p>A pretty, easy-to-wear accessory for everyday outfits.</p><a href="tutorials/crochet-bandana.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="accessories"><a class="project-image" href="tutorials/crochet-bow.html"><img src="images/bow2.jpg" alt="Crochet Bow Hair Clip"></a><div class="project-info"><p class="project-category">ACCESSORIES</p><h2>Crochet Bow Hair Clip</h2><p>A sweet handmade bow clip for a pretty finishing touch.</p><a href="tutorials/crochet-bow.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="bags-purses"><a class="project-image" href="tutorials/crochet-tweed-bag.html"><img src="images/tweed1.jpg" alt="Crochet Tweed Bag"></a><div class="project-info"><p class="project-category">BAGS &amp; PURSES</p><h2>Crochet Tweed Bag</h2><p>A cute crochet party bag made with contrasting yarn and a touch of sparkle.</p><a href="tutorials/crochet-tweed-bag.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="accessories"><a class="project-image" href="tutorials/crochet-orchids.html"><img src="images/orchid1.jpg" alt="Crochet orchid necklace and hair clip"></a><div class="project-info"><p class="project-category">FLORAL ACCESSORIES</p><h2>Crochet Orchid Accessories</h2><p>Make a delicate orchid necklace and a statement hair clip.</p><a href="tutorials/crochet-orchids.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="bags-purses"><a class="project-image" href="tutorials/crochet-pouch.html"><img src="images/pouch1.jpg" alt="Crochet Mini Purse"></a><div class="project-info"><p class="project-category">BAGS &amp; PURSES</p><h2>Crochet Mini Purse</h2><p>A quick, beginner-friendly mini purse with a beautiful basket weave texture.</p><a href="tutorials/crochet-pouch.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="accessories"><a class="project-image" href="tutorials/crochet-striped-hairband.html"><img src="images/hairband-1.jpg" alt="Crochet Zigzag Striped Hairband"></a><div class="project-info"><p class="project-category">ACCESSORIES</p><h2>Zigzag Striped Hairband</h2><p>A cozy, beginner-friendly hairband with soft zigzag stripes.</p><a href="tutorials/crochet-striped-hairband.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="accessories"><a class="project-image" href="tutorials/cute-crochet-hair-clips.html"><img src="images/clips1.jpeg" alt="Cute Crochet Hair Clips"></a><div class="project-info"><p class="project-category">ACCESSORIES</p><h2>Cute Crochet Hair Clips</h2><p>Make quick, customizable clips with sweet floral details.</p><a href="tutorials/cute-crochet-hair-clips.html">VIEW PATTERN</a></div></article>
+        <article class="project-card" data-category="plushies"><a class="project-image" href="tutorials/mini-cat.html"><img src="images/cats3.jpg" alt="Crochet Mini Cat Plushie"></a><div class="project-info"><p class="project-category">AMIGURUMI</p><h2>Mini Cat Plushie</h2><p>A tiny crochet cat plushie that’s perfect for your desk or bag.</p><a href="tutorials/mini-cat.html">VIEW PATTERN</a></div></article>
+    </section>
+</main>
+
+<footer><div class="footer-inner"><div class="footer-column"><h4><a href="privacy-policy.html">Privacy Policy</a></h4><p>Read our Privacy Policy for information about this website and external services.</p></div><div class="footer-column"><h4>Explore</h4><a href="written-patterns.html">Written Patterns</a><a href="supplies.html">Supplies</a><a href="about.html">About</a></div><div class="footer-column"><h4>Connect</h4><a href="https://www.instagram.com/stitchy_days/">Instagram</a><a href="https://youtube.com/@stitchydays?si=2HmQb50o5YXPT8eg">YouTube</a><a href="https://in.pinterest.com/stitchydays/">Pinterest</a></div></div><div class="footer-bottom">© 2026 Stitchy Days. All rights reserved.</div></footer>
+<script>
+const menuButton = document.getElementById("menuButton");
+const closeMenu = document.getElementById("closeMenu");
+const sideMenu = document.getElementById("sideMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+
+function openMenu() {
+    sideMenu.classList.add("open");
+    menuOverlay.classList.add("show");
+    document.body.classList.add("menu-open");
+    menuButton.setAttribute("aria-expanded", "true");
+}
+
+function closeSideMenu() {
+    sideMenu.classList.remove("open");
+    menuOverlay.classList.remove("show");
+    document.body.classList.remove("menu-open");
+    menuButton.setAttribute("aria-expanded", "false");
+}
+
+menuButton.addEventListener("click", openMenu);
+closeMenu.addEventListener("click", closeSideMenu);
+menuOverlay.addEventListener("click", closeSideMenu);
+document.querySelectorAll(".side-menu a").forEach(link => link.addEventListener("click", closeSideMenu));
+
+const patternCategory = new URLSearchParams(window.location.search).get("category");
+const validCategories = ["flowers-plants", "accessories", "bags-purses", "plushies"];
+const activeCategory = validCategories.includes(patternCategory) ? patternCategory : "all";
+document.querySelectorAll(".patterns-grid .project-card").forEach(card => {
+    card.classList.toggle("is-filtered", activeCategory !== "all" && card.dataset.category !== activeCategory);
+});
+document.querySelectorAll(".patterns-filter a").forEach(link => {
+    if (link.dataset.filter === activeCategory) link.setAttribute("aria-current", "page");
+});
+</script>
+</body>
+</html>
