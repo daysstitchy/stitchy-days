@@ -80,11 +80,7 @@
             <a href="../about.html">About</a>
         </nav>
 
-        <button
-            class="menu-button"
-            id="menuButton"
-            aria-label="Open menu"
-            aria-expanded="false">
+        <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -100,8 +96,8 @@
      ========================================= -->
 
 <div class="menu-overlay" id="menuOverlay"></div>
-<aside class="side-menu" id="sideMenu">
-    <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
+<div class="side-menu">
+    <button class="close-menu" aria-label="Close menu">×</button>
     <p class="menu-label">POPULAR</p>
     <h2>My favourite patterns!</h2>
     <div class="popular-patterns">
@@ -111,14 +107,14 @@
         </a>
         <a href="../tutorials/crochet-planter.html" class="popular-pattern">
             <div class="popular-pattern-image"><img src="../images/planter.webp" alt="Crochet Hanging Planter"></div>
-            <div class="popular-pattern-info"><span>HOME DECOR</span><h3>Hanging Planter</h3></div>
+            <div class="popular-pattern-info"><span>FLOWERS &amp; PLANTS</span><h3>Hanging Planter</h3></div>
         </a>
         <a href="../tutorials/crochet-bandana.html" class="popular-pattern">
             <div class="popular-pattern-image"><img src="../images/bandana.webp" alt="Crochet Bandana"></div>
             <div class="popular-pattern-info"><span>ACCESSORIES</span><h3>Crochet Bandana</h3></div>
         </a>
     </div>
-</aside>
+</div>
 
 
 <!-- =========================================
@@ -690,29 +686,31 @@
      ========================================= -->
 
 <script>
-const menuButton = document.getElementById("menuButton");
-const closeMenu = document.getElementById("closeMenu");
-const sideMenu = document.getElementById("sideMenu");
-const menuOverlay = document.getElementById("menuOverlay");
+const menuButton = document.querySelector(".menu-button");
+const closeMenu = document.querySelector(".close-menu");
+const sideMenu = document.querySelector(".side-menu");
+const menuOverlay = document.querySelector(".menu-overlay");
 
-function openMenu() {
-    sideMenu.classList.add("open");
-    menuOverlay.classList.add("show");
-    document.body.classList.add("menu-open");
-    menuButton.setAttribute("aria-expanded", "true");
+function setMenuOpen(isOpen) {
+    sideMenu.classList.toggle("open", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    if (menuOverlay) menuOverlay.classList.toggle("show", isOpen);
+    document.body.classList.toggle("menu-open", isOpen);
 }
 
-function closeSideMenu() {
-    sideMenu.classList.remove("open");
-    menuOverlay.classList.remove("show");
-    document.body.classList.remove("menu-open");
-    menuButton.setAttribute("aria-expanded", "false");
+menuButton.addEventListener("click", () => {
+    setMenuOpen(!sideMenu.classList.contains("open"));
+});
+
+closeMenu.addEventListener("click", () => setMenuOpen(false));
+
+if (menuOverlay) {
+    menuOverlay.addEventListener("click", () => setMenuOpen(false));
 }
 
-menuButton.addEventListener("click", openMenu);
-closeMenu.addEventListener("click", closeSideMenu);
-menuOverlay.addEventListener("click", closeSideMenu);
-document.querySelectorAll(".side-menu a").forEach(link => link.addEventListener("click", closeSideMenu));
+document.querySelectorAll(".side-menu a").forEach(link => {
+    link.addEventListener("click", () => setMenuOpen(false));
+});
 </script>
 
 </body>

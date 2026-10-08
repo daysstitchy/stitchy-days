@@ -680,7 +680,6 @@
                 <a href="../written-patterns.html">Plushies</a>
                 <a href="../written-patterns.html">Accessories</a>
                 <a href="../written-patterns.html">Bags &amp; Purses</a>
-                <a href="../written-patterns.html">Home Decor</a>
             </nav>
         </section>
 
@@ -858,19 +857,31 @@
      ========================================= -->
 
 <script>
-
 const menuButton = document.querySelector(".menu-button");
 const closeMenu = document.querySelector(".close-menu");
 const sideMenu = document.querySelector(".side-menu");
+const menuOverlay = document.querySelector(".menu-overlay");
+
+function setMenuOpen(isOpen) {
+    sideMenu.classList.toggle("open", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    if (menuOverlay) menuOverlay.classList.toggle("show", isOpen);
+    document.body.classList.toggle("menu-open", isOpen);
+}
 
 menuButton.addEventListener("click", () => {
-    sideMenu.classList.add("active");
+    setMenuOpen(!sideMenu.classList.contains("open"));
 });
 
-closeMenu.addEventListener("click", () => {
-    sideMenu.classList.remove("active");
-});
+closeMenu.addEventListener("click", () => setMenuOpen(false));
 
+if (menuOverlay) {
+    menuOverlay.addEventListener("click", () => setMenuOpen(false));
+}
+
+document.querySelectorAll(".side-menu a").forEach(link => {
+    link.addEventListener("click", () => setMenuOpen(false));
+});
 </script>
 
 </body>
