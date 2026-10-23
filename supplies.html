@@ -82,7 +82,7 @@
     <main class="supplies-page">
         <section class="supplies-hero" aria-labelledby="supplies-title">
             <div class="supplies-hero-image">
-                <img class="supplies-hero-photo" src="images/supplies.webp" alt="A collection of crochet supplies" width="4284" height="5712" fetchpriority="high">
+                <img src="images/supplies.webp" alt="A collection of crochet supplies" width="4284" height="5712" fetchpriority="high">
             </div>
             <div class="supplies-hero-content">
                 <h1 id="supplies-title">Crochet Supplies</h1>
@@ -228,22 +228,6 @@
 
 
     <script>
-const suppliesHeroImage = document.querySelector(".supplies-hero-photo");
-const showDecodedSuppliesHero = () => suppliesHeroImage.classList.add("is-decoded");
-
-if (suppliesHeroImage) {
-    if (suppliesHeroImage.complete) {
-        if (suppliesHeroImage.naturalWidth && suppliesHeroImage.decode) {
-            suppliesHeroImage.decode().then(showDecodedSuppliesHero).catch(showDecodedSuppliesHero);
-        } else {
-            showDecodedSuppliesHero();
-        }
-    } else {
-        suppliesHeroImage.addEventListener("load", showDecodedSuppliesHero, { once: true });
-        suppliesHeroImage.addEventListener("error", showDecodedSuppliesHero, { once: true });
-    }
-}
-
 const menuButton = document.getElementById("menuButton");
 const closeMenu = document.getElementById("closeMenu");
 const sideMenu = document.getElementById("sideMenu");
