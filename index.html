@@ -267,7 +267,7 @@
         <div class="project-image">
             <img
                 src="images/main.webp"
-                alt="Crochet projects by Stitchy Days" width="1206" height="1554" fetchpriority="high">
+                alt="Crochet projects by Stitchy Days" width="1206" height="1554" fetchpriority="high" class="homepage-hero-photo">
         </div>
 
     </div>
@@ -744,6 +744,22 @@
      ========================================= -->
 
 <script>
+const homepageHeroImage = document.querySelector(".homepage-hero-photo");
+const showDecodedHomepageHero = () => homepageHeroImage.classList.add("is-decoded");
+
+if (homepageHeroImage) {
+    if (homepageHeroImage.complete) {
+        if (homepageHeroImage.naturalWidth && homepageHeroImage.decode) {
+            homepageHeroImage.decode().then(showDecodedHomepageHero).catch(showDecodedHomepageHero);
+        } else {
+            showDecodedHomepageHero();
+        }
+    } else {
+        homepageHeroImage.addEventListener("load", showDecodedHomepageHero, { once: true });
+        homepageHeroImage.addEventListener("error", showDecodedHomepageHero, { once: true });
+    }
+}
+
 const menuButton = document.getElementById("menuButton");
 const closeMenu = document.getElementById("closeMenu");
 const sideMenu = document.getElementById("sideMenu");

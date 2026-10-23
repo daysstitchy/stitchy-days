@@ -859,6 +859,14 @@ input {
     object-position: center;
 }
 
+.homepage-hero-photo {
+    visibility: hidden;
+}
+
+.homepage-hero-photo.is-decoded {
+    visibility: visible;
+}
+
 
 /* =========================================
    IMAGE PLACEHOLDER
@@ -2402,6 +2410,14 @@ footer {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.supplies-hero-photo {
+    visibility: hidden;
+}
+
+.supplies-hero-photo.is-decoded {
+    visibility: visible;
 }
 
 .supplies-hero-content {
